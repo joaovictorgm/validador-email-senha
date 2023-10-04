@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Login</title>
+   
+</head>
+<body>
+    <h1>Login</h1>
+    <form id="registrateForm"action="#" method="POST"><!--Início do formulário com método POST, que serve para solicitar que o servidor web aceite os dados anexados no corpo da mensagem de requisição para armazenamento e ação "#" (valor fictício) -->
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required><br><br><!-- Campo de entrada de texto para o nome, com ID, nome e atributo "required"-->
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <span id="emailError"></span><!-- Adicione um elemento para exibir erros de email-->
+
+        <label for="password">Senha:</label>
+        <input type="text" id="password" name="password" required><br><br>
+        <span id="passwordError"></span><!--Adicione um elemento para exibir erros de senha-->
+
+        <input type="submit" value="Registro">
+    </form>
+    <script src="index.js"></script> 
+</body>
+</html>
